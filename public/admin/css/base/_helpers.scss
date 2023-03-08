@@ -1,0 +1,118 @@
+// list reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// clearfix
+%clearfix {
+ &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+// transition
+%transition {
+ transition: all 0.3s ease-in-out;
+}
+
+// justify nav
+%justify {
+ text-align: justify;
+ > * {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+ }
+ &:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+ }
+}
+
+
+
+/// * Helper class to truncate and add ellipsis to a string too long for it to fit
+/// * on a single line.
+/// * 1. Prevent content from wrapping, forcing it on a single line.
+/// * 2. Add ellipsis at the end of the line.
+
+.ellipsis {
+  white-space: nowrap; /* 1 */
+  text-overflow: ellipsis; /* 2 */
+  overflow: hidden;
+}
+
+
+//text colors
+
+
+.text-primary{
+  color: $primary-color !important;
+}
+.text-secondary{
+  color: $secondary-color !important;
+}
+
+.text-mischka-gray{
+  color: $mischka-gray !important;
+}
+
+.text-red{
+  color: $dark-red !important;
+}
+
+.text-green{
+  color: $dark-green !important;
+}
+
+.text-black{
+  color: #000 !important;
+}
+
+
+.bg-lightest-gray{
+  background: $lightest-gray !important;
+}
+
+
+.flex-align{
+  @include flex-align;
+}
+
+.space-between{
+  @include flex-align;
+  justify-content: space-between;
+}
+
+.gap-30{
+  gap: 30px;
+}
+
+.border-top-gray{
+  border-top: 1px solid $primary-gray;
+}
+
+.border-bottom-gray{
+  border-bottom: 1px solid $primary-gray;
+}
+
+.fw-500{
+  font-weight: 500;
+}
+
+.scrollbar-none{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

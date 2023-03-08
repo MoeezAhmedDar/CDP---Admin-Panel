@@ -1,0 +1,59 @@
+.social-links{
+    @extend %listreset;
+    overflow: hidden;
+    letter-spacing: -5px;
+    padding: 2px 4px 0 0;
+    margin: 0 0 50px;
+
+    li{
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        padding: 2px;
+    }
+
+    a{
+        display: block;
+        text-align: center;
+        
+        i{
+            font-size: 14px;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background: #000;
+            line-height: 25px;
+            color: #fff;
+
+            &[class*="facebook"] { 
+                background: #3a5898;
+            } 
+
+            &[class*="twitter"] { 
+                background: #3f98fe;
+            }
+            
+            &[class*="linkedin"] { 
+                background: #0e76a8;
+            }
+
+            &[class*="instagram"] { 
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 64, 231, 0.94)), color-stop(10%, rgba(77, 54, 212, 0.94)), color-stop(16%, rgba(98, 48, 193, 0.94)), color-stop(24%, rgba(127, 41, 166, 0.94)), color-stop(32%, rgba(170, 39, 128, 0.94)), color-stop(37%, rgba(194, 46, 104, 0.94)), color-stop(49%, rgba(228, 71, 66, 0.94)), color-stop(61%, rgba(239, 90, 46, 0.94)), color-stop(70%, rgba(240, 104, 46, 0.94)), color-stop(78%, rgba(242, 128, 50, 0.94)), color-stop(88%, rgba(244, 160, 58, 0.94)), color-stop(96%, rgba(245, 178, 67, 0.94)), to(rgba(245, 184, 73, 0.94)));
+                background: linear-gradient(to bottom, rgba(55, 64, 231, 0.94) 0%, rgba(77, 54, 212, 0.94) 10%, rgba(98, 48, 193, 0.94) 16%, rgba(127, 41, 166, 0.94) 24%, rgba(170, 39, 128, 0.94) 32%, rgba(194, 46, 104, 0.94) 37%, rgba(228, 71, 66, 0.94) 49%, rgba(239, 90, 46, 0.94) 61%, rgba(240, 104, 46, 0.94) 70%, rgba(242, 128, 50, 0.94) 78%, rgba(244, 160, 58, 0.94) 88%, rgba(245, 178, 67, 0.94) 96%, rgba(245, 184, 73, 0.94) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f03740e7', endColorstr='#f0f5b849',GradientType=0 );
+            }
+
+            &[class*="youtube"] { 
+                background: #e44e36;
+            }
+
+            &[class*="skype"] { 
+                background: #37a6de;
+            }
+
+            &[class*="behance"] {
+                background: #863BAE;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/node_modules
+/public/hot
+/public/reports
+/public/storage
+/public/reports
+/public/clean_sheet
+/app/Http/Requests/Auth
+# /storage/*.key
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+/public/uploads
+/.env
+/vendor
+/composer.lock
+
+
